@@ -1,0 +1,42 @@
+Capstone Final Project - ShinyApp Pitch
+========================================================
+author: Yogitha
+date: 10-Feb-2020
+autosize: true
+
+Overview of the Project
+========================================================
+
+The purpose of the project is to create word-prediction application with R Shiny package that predicts words using a natural language processing model.
+
+The Shiny app takes as input a word or a phrase (multiple words) in a text box input and outputs a prediction of the next word.
+
+This slide deck's main aim is to pitch the application and the prediction algorithm used.
+
+ShinyApp Link: https://yogithad.shinyapps.io/Shinyapp/
+
+Prediction Model
+========================================================
+
+The prediction model uses Natural Language processing and Text Mining in R. The following Key steps are involved in the prediction model.
+
+* Raw text files from Blogs, Twitter and News articles are used as input.
+* The data is cleaned and a corpus is built.
+* Then the N-gram frequencies are built and the resulting unigram, trigram & quadgram data are stored as *.Rdata* files.
+* N grams function uses a back-off type prediction model
+      - User supplies an input word or phrase
+      - Model predicts the next one, two or three words as per the number of predictions set by the user
+
+Shiny Application
+========================================================
+
+The Next Word Predictor app provides a simple user interface to the next word prediction model. The app takes as input a word or a phrase (multiple words) in a text box input and outputs a prediction of the next 1, 2 or 3 words.
+
+The below image describes how the app functions and its instructions.
+
+![plot of chunk unnamed-chunk-1](./Application-Usage.jpg)
+
+Reference
+========================================================
+
+Link to Github Repo: https://github.com/Yogithad/Capstone-Project
